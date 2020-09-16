@@ -14,10 +14,10 @@ struct personaje
 unsigned int cont = 0;
 void capturar_personajes(){
     if(cont < 5){
-        printf("Nombre: ");
-        scanf("%s",personajes[cont].nombre);
-        printf("Tipo: ");
-        scanf("%s",personajes[cont].tipo);
+        printf("Nombre: "); fflush(stdin);
+        gets(personajes[cont].nombre);
+        printf("Tipo: "); fflush(stdin);
+        gets(personajes[cont].tipo);
         printf("Fuerza: ");
         scanf("%f",&personajes[cont].fuerza);
         printf("Salud: ");
